@@ -26,7 +26,7 @@ import sys
 import time
 from pathlib import Path
 
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 TITEL = "Smalox Hub"
 AUMID = "Smalox.Hub"
 PORTS = {"zeitblick": 8771, "destille": 8773, "deadswitch": 8775, "dashboard": 8776}

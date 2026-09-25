@@ -63,6 +63,14 @@ $("#todo-form").addEventListener("submit", (e) => {
   todosAktualisieren();
 });
 
+/* Routinen: Haken zählen mit */
+$("#routinen-liste").addEventListener("change", () => {
+  const alle = $$("#routinen-liste li:not(.auto)"), fertig = alle.filter((li) => li.querySelector("input").checked);
+  alle.forEach((li) => li.classList.toggle("fertig", li.querySelector("input").checked));
+  $("#routinen-chip").textContent = `${fertig.length + 1} / ${alle.length + 1} geschafft`;
+});
+$$("#routinen-liste li:not(.auto)").forEach((li) => li.classList.toggle("fertig", li.querySelector("input").checked));
+
 /* Dropbox: erkennt einfache Muster und zeigt, wohin es einsortiert würde */
 const ZIELE = [
   [/https?:\/\//i, "✦", "Destille", "Link wird ausgelesen und in To-Dos verwandelt"],
