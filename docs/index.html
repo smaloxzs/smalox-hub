@@ -6,6 +6,7 @@
 <title>Smalox Hub – dein Leben an einem Ort</title>
 <meta name="description" content="Smalox Hub: kostenlose Windows-App für To-Dos, Deadlines mit Konsequenz, Bildschirmzeit, Second Brain, Links zu To-Dos und KI-Assistent. Alles lokal auf deinem PC.">
 <meta name="robots" content="noindex">
+<meta name="theme-color" content="#05070f">
 <meta property="og:title" content="Smalox Hub – dein Leben an einem Ort">
 <meta property="og:description" content="To-Dos, Deadlines, Bildschirmzeit, Second Brain und KI in einer kostenlosen Windows-App.">
 <meta property="og:image" content="vorschau.png">
@@ -13,109 +14,277 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
 
 <header class="kopf">
-  <a class="marke" href="#"><img src="icon.png" alt="" width="32" height="32"><span>Smalox Hub</span></a>
-  <nav><a href="#apps">Was drin ist</a><a href="#installieren">Installieren</a><a href="#faq">FAQ</a></nav>
+  <a class="marke" href="#"><img src="icon.png" alt="" width="30" height="30"><span>Smalox Hub</span></a>
+  <nav><a href="#demo">Ausprobieren</a><a href="#funktionen">Funktionen</a><a href="#tag">Ein Tag</a><a href="#installieren">Installieren</a><a href="#faq">FAQ</a></nav>
   <a class="knopf klein" href="#download">Kostenlos laden</a>
 </header>
 
 <main>
-  <section class="held">
-    <p class="etikett">Kostenlos · Windows 10 &amp; 11 · alles lokal</p>
-    <h1>Dein ganzes Leben<br><span class="verlauf">an einem Ort.</span></h1>
-    <p class="unter">To-Dos, Deadlines mit echter Konsequenz, Bildschirmzeit, dein Second Brain und ein KI-Assistent, der für dich einsortiert. Eine App, ein Klick, keine Cloud.</p>
-    <div class="knoepfe" id="download">
-      <a class="knopf gross" href="https://github.com/smaloxzs/smalox-hub/releases/latest/download/SmaloxHub.exe">
-        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3v11.2l3.6-3.6 1.4 1.4-6 6-6-6 1.4-1.4 3.6 3.6V3zM5 19h14v2H5z"/></svg>
-        Smalox Hub herunterladen</a>
-      <span class="klein-info">SmaloxHub.exe · ca. 16 MB · Version 1.0.0</span>
-    </div>
+<!-- ───────── Hero ───────── -->
+<section class="held">
+  <p class="etikett zeige"><span class="punkt-live"></span> Neu: Version 1.0 · kostenlos für Windows</p>
+  <h1 class="zeige">Dein ganzes Leben.<br><span class="verlauf">Eine App.</span></h1>
+  <p class="unter zeige">To-Dos, Deadlines mit echter Konsequenz, Bildschirmzeit, dein Second Brain und ein KI-Assistent, der für dich einsortiert. Alles lokal auf deinem PC, ohne Konto, ohne Cloud.</p>
+  <div class="knoepfe zeige" id="download">
+    <a class="knopf gross" href="https://github.com/smaloxzs/smalox-hub/releases/latest/download/SmaloxHub.exe">
+      <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 3v11.2l3.6-3.6 1.4 1.4-6 6-6-6 1.4-1.4 3.6 3.6V3zM5 19h14v2H5z"/></svg>
+      Für Windows herunterladen</a>
+    <a class="knopf geist gross" href="#demo">Live ausprobieren →</a>
+  </div>
+  <p class="klein-info zeige">SmaloxHub.exe · ca. 16 MB · Windows 10 &amp; 11</p>
+
+  <div class="zahlen zeige">
+    <div><b data-zaehlen="5">5</b><span>Apps in einer</span></div>
+    <div><b>0 €</b><span>für immer kostenlos</span></div>
+    <div><b data-zaehlen="100">100</b><b>%</b><span>lokal auf deinem PC</span></div>
+    <div><b data-zaehlen="2">2</b><span>Minuten bis startklar</span></div>
+  </div>
+
+  <div class="buehne zeige">
     <figure class="vorschau"><img src="vorschau.png" alt="Smalox Hub: Übersicht mit To-Dos, Projekten und Kennzahlen" width="1480" height="940"></figure>
-  </section>
+    <div class="schwebe s1"><span class="ik-rund gruen">✓</span><div><b>To-Do erledigt</b><small>„30 Minuten lesen“</small></div></div>
+    <div class="schwebe s2"><span class="ik-rund rot">⚑</span><div><b>Deadline in 2:59 Std</b><small>sonst werden Spiele gesperrt</small></div></div>
+    <div class="schwebe s3"><span class="ik-rund lila">✦</span><div><b>3 Buchtipps gefunden</b><small>aus einem Reel, von Destille</small></div></div>
+  </div>
+</section>
 
-  <section id="apps" class="block">
-    <h2>Fünf Apps, ein Hub</h2>
-    <p class="block-unter">Alles greift ineinander: Was du irgendwo einträgst, taucht überall auf, wo es hingehört.</p>
-    <div class="karten">
-      <article class="karte"><div class="ik blau">▦</div><h3>Dashboard</h3>
-        <p>Übersicht, To-Dos, Kalender, Projekte, Wunschliste und dein Second Brain. Live, mit vielen Diagrammen.</p></article>
-      <article class="karte"><div class="ik lila">✦</div><h3>Destille</h3>
-        <p>Wirf Links, TikToks, Reels oder Artikel rein, Claude macht daraus Kernpunkte, To-Dos und Empfehlungen (Bücher, Filme, Spiele …).</p></article>
-      <article class="karte"><div class="ik rot">⏻</div><h3>Deadswitch</h3>
-        <p>Deadlines mit Konsequenz: Verpasst du sie, werden Spiele und Ablenkungs-Websites gesperrt, bis die Aufgabe erledigt ist.</p></article>
-      <article class="karte"><div class="ik gruen">◷</div><h3>Zeitblick</h3>
-        <p>Zeichnet automatisch auf, wofür deine Zeit am PC draufgeht: Kalender-Ansicht, Kategorien, Fokus vs. Ablenkung.</p></article>
-      <article class="karte"><div class="ik gelb">⛨</div><h3>Zeitschloss</h3>
-        <p>Chrome-Erweiterung: Websites sperren oder ein Zeitbudget pro Stunde vergeben, z. B. 15 Minuten TikTok.</p></article>
-      <article class="karte hervor"><div class="ik blau">✧</div><h3>Claude als Assistent</h3>
-        <p>Frag oder befiehl: „Trag X ins Projekt Y ein“, „Was steht diese Woche an?“ Claude sortiert selbst ein.</p></article>
-    </div>
-  </section>
+<section class="leiste zeige" aria-label="Funktioniert mit">
+  <span>Funktioniert mit</span>
+  <b>Windows 10 &amp; 11</b><b>Obsidian</b><b>Claude</b><b>Google Chrome</b><b>TikTok · Reels · YouTube</b>
+</section>
 
-  <section class="block zwei">
-    <div>
-      <h2>Einfach reinschreiben.<br>Der Hub sortiert.</h2>
-      <p>In die <b>Dropbox</b> schreibst du, was dir einfällt, auch mehreres auf einmal. Claude erkennt, was es ist, und legt es an den richtigen Platz:</p>
-      <ul class="liste">
-        <li><b>„Morgen 15 Uhr Zahnarzt“</b> → To-Do im Kalender</li>
-        <li><b>„Für Projekt X noch Y erledigen“</b> → Aufgabe im Projekt</li>
-        <li><b>„Irgendwann kaufen: Wool Coat, 60 €“</b> → Wunschliste</li>
-        <li><b>„Idee: …“</b> → Notiz im passenden Bereich deines Second Brain</li>
-        <li><b>ein Link zu einem Video</b> → Destille macht To-Dos daraus</li>
-      </ul>
-    </div>
-    <div class="kasten">
-      <p class="kasten-titel">Deine Daten bleiben bei dir</p>
-      <ul class="haken">
-        <li>Läuft komplett auf deinem PC, kein Konto, keine Cloud</li>
-        <li>Dein Second Brain ist ein normaler Ordner mit Markdown-Dateien, kompatibel mit Obsidian</li>
-        <li>KI-Funktionen laufen über dein eigenes Claude-Konto, nur wenn du sie nutzt</li>
-        <li>Deinstallieren jederzeit über Windows-Einstellungen → Apps</li>
-      </ul>
-    </div>
-  </section>
+<!-- ───────── Interaktive Demo ───────── -->
+<section id="demo" class="block">
+  <p class="vorzeile zeige">Interaktive Demo</p>
+  <h2 class="zeige">Klick dich durch, bevor du lädst.</h2>
+  <p class="block-unter zeige">Eine Mini-Version des Hubs direkt im Browser. Hake To-Dos ab, schreib etwas in die Dropbox und schau zu, wie es einsortiert wird.</p>
 
-  <section id="installieren" class="block">
-    <h2>In zwei Minuten startklar</h2>
-    <ol class="schritte">
-      <li><b>Herunterladen</b> und <code>SmaloxHub.exe</code> doppelklicken.</li>
-      <li><b>Windows-Warnung?</b> Die App ist neu und nicht signiert. Klick auf „Weitere Informationen“ und dann auf „Trotzdem ausführen“.</li>
-      <li><b>Name eingeben</b> und wählen, ob du ein vorhandenes Obsidian-Vault nutzt oder ein neues Second Brain anlegen lässt.</li>
-      <li><b>Fertig:</b> Der Hub installiert sich, legt ein Desktop-Symbol an und startet ab jetzt automatisch mit Windows.</li>
-    </ol>
-    <div class="zwei-kaesten">
-      <div class="kasten">
-        <p class="kasten-titel">Optional: Chrome-Erweiterungen</p>
-        <p>Für Zeitschloss und das Destille-Symbol in Chrome: <code>chrome://extensions</code> öffnen, „Entwicklermodus“ an, „Entpackte Erweiterung laden“ und den Ordner wählen:</p>
-        <ul class="liste klein">
-          <li><code>%LOCALAPPDATA%\SmaloxHub\apps\web-demos\zeitschloss</code></li>
-          <li><code>%LOCALAPPDATA%\SmaloxHub\apps\web-demos\destille\extension</code></li>
+  <div class="demo zeige">
+    <aside class="demo-nav" role="tablist" aria-label="Demo-Bereiche">
+      <div class="demo-marke"><img src="icon.png" alt="" width="22" height="22"> Smalox Hub</div>
+      <button role="tab" aria-selected="true" data-tab="todos"><i>✓</i>To-Dos</button>
+      <button role="tab" data-tab="dropbox"><i>⇣</i>Dropbox</button>
+      <button role="tab" data-tab="deadswitch"><i>⚑</i>Deadswitch</button>
+      <button role="tab" data-tab="zeit"><i>◷</i>Bildschirmzeit</button>
+      <button role="tab" data-tab="wunsch"><i>◎</i>Wunschliste</button>
+      <button role="tab" data-tab="destille"><i>✦</i>Destille</button>
+    </aside>
+    <div class="demo-inhalt">
+      <!-- To-Dos -->
+      <div class="demo-seite aktiv" data-seite="todos" role="tabpanel">
+        <div class="demo-kopf"><h3>Guten Tag, Alex 👋</h3><span class="chip" id="todo-zaehler">3 offen</span></div>
+        <form class="demo-zeile" id="todo-form"><input id="todo-text" placeholder="Neues To-Do … (Enter)" maxlength="60" autocomplete="off"><button class="mini-knopf">＋</button></form>
+        <ul class="demo-liste" id="todo-liste">
+          <li><label><input type="checkbox"><span>★ Bewerbung fertig schreiben</span></label><em class="gelb">morgen</em></li>
+          <li><label><input type="checkbox"><span>Zahnarzttermin ausmachen</span></label><em class="blau">Mo.</em></li>
+          <li><label><input type="checkbox"><span>30 Minuten lesen</span></label></li>
         </ul>
+        <div class="fortschritt"><div class="balken"><i id="todo-balken"></i></div><span id="todo-prozent">0 % erledigt</span></div>
       </div>
-      <div class="kasten">
-        <p class="kasten-titel">Optional: KI mit Claude</p>
-        <p>Chat, Dropbox-Einsortieren und Destille nutzen <a href="https://claude.com/claude-code" rel="noopener">Claude Code</a>. Einmal installieren und mit deinem Claude-Konto anmelden, der Hub findet es automatisch. Ohne Claude funktioniert alles andere trotzdem.</p>
+      <!-- Dropbox -->
+      <div class="demo-seite" data-seite="dropbox" role="tabpanel">
+        <div class="demo-kopf"><h3>Dropbox</h3><span class="chip">einfach reinschreiben</span></div>
+        <form id="dropbox-form"><textarea id="dropbox-text" rows="2" placeholder="z. B. „Morgen 15 Uhr Zahnarzt“">Morgen 15 Uhr Zahnarzt</textarea>
+          <div class="bsp"><button type="button" data-bsp="Irgendwann kaufen: Wool Coat, 60 €">Wunsch</button><button type="button" data-bsp="Idee: App, die ans Gießen erinnert">Idee</button><button type="button" data-bsp="Sperr mich, wenn die Hausarbeit Freitag nicht fertig ist">Deadline</button><button type="button" data-bsp="https://www.tiktok.com/@creator/video/123">Link</button></div>
+          <button class="knopf klein" id="dropbox-los">✦ Einsortieren</button></form>
+        <div class="dropbox-flug" id="dropbox-flug" aria-live="polite"></div>
+      </div>
+      <!-- Deadswitch -->
+      <div class="demo-seite" data-seite="deadswitch" role="tabpanel">
+        <div class="demo-kopf"><h3>Hausarbeit abgeben</h3><span class="chip rot">Deadswitch</span></div>
+        <div class="countdown" id="countdown">2:59:59</div>
+        <p class="gedimmt">Verpasst du die Deadline, werden Spiele und TikTok gesperrt, bis du die Aufgabe mit Nachweis erledigst.</p>
+        <ul class="demo-liste schritte-demo" id="ds-schritte">
+          <li><label><input type="checkbox" checked><span>Schritt 1 · Quellen sammeln</span></label></li>
+          <li><label><input type="checkbox"><span>Schritt 2 · Gliederung schreiben</span></label></li>
+          <li><label><input type="checkbox"><span>Schritt 3 · Text fertigstellen</span></label></li>
+        </ul>
+        <div class="fortschritt"><div class="balken rot"><i id="ds-balken" style="width:33%"></i></div><span id="ds-text">1/3 Schritte</span></div>
+      </div>
+      <!-- Bildschirmzeit -->
+      <div class="demo-seite" data-seite="zeit" role="tabpanel">
+        <div class="demo-kopf"><h3>Diese Woche</h3><span class="chip gruen" id="fokus-chip">62 % Fokus</span></div>
+        <div class="saeulen" id="saeulen"></div>
+        <div class="legende"><span><i style="background:var(--blau)"></i>Produktiv</span><span><i style="background:var(--lila)"></i>Lernen</span><span><i style="background:var(--pink)"></i>Social Media</span><span><i style="background:var(--gelb)"></i>Gaming</span></div>
+        <p class="gedimmt klein">Tipp: Fahr mit der Maus über einen Tag.</p>
+      </div>
+      <!-- Wunschliste -->
+      <div class="demo-seite" data-seite="wunsch" role="tabpanel">
+        <div class="demo-kopf"><h3>Wunschliste</h3><span class="chip" id="wunsch-summe">368,90 € offen</span></div>
+        <ul class="demo-liste" id="wunsch-liste">
+          <li data-preis="29.9"><label><input type="checkbox"><span>Waffle Henley · Uniqlo</span></label><em>29,90 €</em></li>
+          <li data-preis="60"><label><input type="checkbox"><span>Wool Coat · Bershka</span></label><em>60 €</em></li>
+          <li data-preis="279"><label><input type="checkbox"><span>Kopfhörer · Sony</span></label><em class="gelb">bald · 279 €</em></li>
+        </ul>
+        <p class="gedimmt klein">Haken = gekauft. Die Summe rechnet mit.</p>
+      </div>
+      <!-- Destille -->
+      <div class="demo-seite" data-seite="destille" role="tabpanel">
+        <div class="demo-kopf"><h3>Aus einem Reel</h3><span class="chip lila">Destille</span></div>
+        <div class="reel"><div class="reel-bild">▶</div><div><b>„5 Bücher je nach Lebenslage“</b><small>Instagram · abgeschrieben + 6 Standbilder</small></div></div>
+        <p class="abschnitt">Empfehlungen</p>
+        <div class="tags"><span>📚 Extreme Ownership</span><span>📚 The Power of Now</span><span>📚 Selbstbetrachtungen</span><span>📚 Can't Hurt Me</span></div>
+        <p class="abschnitt">To-Dos</p>
+        <ul class="demo-liste"><li><label><input type="checkbox"><span>„Extreme Ownership“ als Nächstes lesen</span></label><em>klein</em></li></ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="faq" class="block">
-    <h2>Häufige Fragen</h2>
-    <details><summary>Was kostet Smalox Hub?</summary><p>Nichts. Die App ist kostenlos. Für die KI-Funktionen brauchst du ein eigenes Claude-Konto.</p></details>
-    <details><summary>Läuft das auf dem Mac?</summary><p>Nein, aktuell nur unter Windows 10 und 11.</p></details>
-    <details><summary>Warum warnt Windows beim Start?</summary><p>Die Datei ist nicht mit einem teuren Code-Zertifikat signiert. Windows kennt sie deshalb noch nicht. Über „Weitere Informationen“ → „Trotzdem ausführen“ geht es weiter.</p></details>
-    <details><summary>Kann ich mein bestehendes Obsidian-Vault nutzen?</summary><p>Ja. Beim ersten Start wählst du den Ordner aus. Projekte in <code>02 Projekte/Wichtig</code>, <code>Mittel wichtig</code>, <code>Unwichtig</code>, Aufgaben als <code>- [ ]</code>-Checkboxen, Daily Notes in <code>05 Daily Notes</code>. Ohne Vault legt der Hub eine passende Vorlage an.</p></details>
-    <details><summary>Kann Deadswitch mich wirklich sperren?</summary><p>Ja, das ist der Sinn. Verpasst du eine Deadline, beendet Deadswitch Spiele und sperrt (mit Zeitschloss) Ablenkungs-Websites, bis du die Aufgabe mit einem Nachweis erledigst. Lege Deadlines deshalb bewusst an.</p></details>
-    <details><summary>Wie werde ich es wieder los?</summary><p>Windows-Einstellungen → Apps → „Smalox Hub“ → Deinstallieren. Du kannst wählen, ob deine Daten erhalten bleiben. Dein Second-Brain-Ordner wird nie gelöscht.</p></details>
-    <details><summary>Werden TikToks und Reels wirklich angeschaut?</summary><p>In der normalen Version liest Destille Titel, Beschreibung und Seiteninhalt. Die volle Video-Auswertung (Ton abschreiben, Standbilder) braucht zusätzliche große Pakete und ist deshalb nicht in der .exe enthalten.</p></details>
-  </section>
+<!-- ───────── Bento-Funktionen ───────── -->
+<section id="funktionen" class="block">
+  <p class="vorzeile zeige">Funktionen</p>
+  <h2 class="zeige">Fünf Apps, die sich kennen.</h2>
+  <p class="block-unter zeige">Was du irgendwo einträgst, taucht überall auf, wo es hingehört: im Kalender, im Projekt, in den Deadlines.</p>
+  <div class="bento">
+    <article class="kachel gross-k zeige">
+      <div class="kachel-text"><span class="marke-chip blau">Dashboard</span><h3>Alles auf einen Blick</h3><p>Übersicht, To-Dos, Kalender, Projekte, Wunschliste und dein Second Brain. Live aktualisiert, mit Diagrammen statt Tabellen.</p></div>
+      <svg class="grafik" viewBox="0 0 320 150" aria-hidden="true">
+        <defs><linearGradient id="gl" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#60a5fa" stop-opacity=".5"/><stop offset="1" stop-color="#60a5fa" stop-opacity="0"/></linearGradient></defs>
+        <path d="M0 120 L40 100 L80 108 L120 70 L160 80 L200 45 L240 58 L280 25 L320 35 L320 150 L0 150Z" fill="url(#gl)"/>
+        <path class="linie" d="M0 120 L40 100 L80 108 L120 70 L160 80 L200 45 L240 58 L280 25 L320 35" fill="none" stroke="#60a5fa" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="280" cy="25" r="5" fill="#fff"/></svg>
+    </article>
+    <article class="kachel zeige">
+      <span class="marke-chip rot">Deadswitch</span><h3>Deadlines, die zählen</h3><p>Verpasst? Dann sind Spiele und Ablenkungs-Seiten gesperrt, bis die Aufgabe erledigt ist.</p>
+      <svg class="grafik klein-g" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="48" fill="none" stroke="#1e293b" stroke-width="10"/><circle class="ring" cx="60" cy="60" r="48" fill="none" stroke="#f43f5e" stroke-width="10" stroke-linecap="round" stroke-dasharray="301" stroke-dashoffset="90" transform="rotate(-90 60 60)"/><text x="60" y="66" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">2:59</text></svg>
+    </article>
+    <article class="kachel zeige">
+      <span class="marke-chip gruen">Zeitblick</span><h3>Wohin deine Zeit geht</h3><p>Zeichnet automatisch auf, welche Apps und Seiten du nutzt. Fokus gegen Ablenkung, pro Tag und Woche.</p>
+      <svg class="grafik klein-g" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="42" fill="none" stroke="#3b82f6" stroke-width="16" stroke-dasharray="160 264"/><circle cx="60" cy="60" r="42" fill="none" stroke="#a855f7" stroke-width="16" stroke-dasharray="50 264" stroke-dashoffset="-160"/><circle cx="60" cy="60" r="42" fill="none" stroke="#ec4899" stroke-width="16" stroke-dasharray="54 264" stroke-dashoffset="-210"/></svg>
+    </article>
+    <article class="kachel zeige">
+      <span class="marke-chip lila">Destille</span><h3>Videos zu To-Dos</h3><p>TikToks, Reels, YouTube oder Artikel rein, Kernpunkte, To-Dos und Buch-, Film- und Spieltipps raus.</p>
+      <div class="mini-tags"><span>▶ Reel</span><span>→</span><span>✓ 3 To-Dos</span><span>📚 4 Bücher</span></div>
+    </article>
+    <article class="kachel zeige">
+      <span class="marke-chip gelb">Zeitschloss</span><h3>Zeitbudget pro Stunde</h3><p>Chrome-Erweiterung: 15 Minuten TikTok pro Stunde, danach ist bis zur vollen Stunde Schluss.</p>
+      <div class="budget"><div><i style="width:80%"></i></div><small>12 von 15 Min genutzt</small></div>
+    </article>
+    <article class="kachel breit-k zeige">
+      <span class="marke-chip blau">Claude als Assistent</span><h3>Frag es. Oder sag ihm, was zu tun ist.</h3>
+      <div class="chat-demo">
+        <p class="blase ich">Trag „Studentenausweis abholen“ ins Projekt Studienstart um.</p>
+        <p class="blase ki">Erledigt: Aufgabe im Projekt „Studienstart“ angelegt und aus dem Brain Dump entfernt.</p>
+        <p class="blase ich">Wie viel Zeit hatte ich diese Woche mit Gaming?</p>
+        <p class="blase ki">6 Std 20 Min, 40 Minuten weniger als letzte Woche. 📉</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ───────── Dropbox-Fluss ───────── -->
+<section class="block fluss-block">
+  <div class="zwei">
+    <div class="zeige">
+      <p class="vorzeile">Die Dropbox</p>
+      <h2>Ein Feld für alles.<br>Der Hub sortiert.</h2>
+      <p class="block-unter">Schreib rein, was dir einfällt, auch fünf Dinge auf einmal. Claude erkennt, was es ist, und legt es an den richtigen Platz.</p>
+    </div>
+    <svg class="fluss zeige" viewBox="0 0 460 320" role="img" aria-label="Aus der Dropbox gehen Einträge in Kalender, Projekte, Wunschliste, Second Brain und Destille">
+      <defs><linearGradient id="fl" x1="0" x2="1"><stop offset="0" stop-color="#60a5fa"/><stop offset="1" stop-color="#c084fc"/></linearGradient></defs>
+      <rect x="10" y="130" width="120" height="60" rx="14" fill="#0f172a" stroke="url(#fl)" stroke-width="2"/><text x="70" y="166" text-anchor="middle" fill="#fff" font-weight="700" font-size="16">⇣ Dropbox</text>
+      <g fill="none" stroke="url(#fl)" stroke-width="2" class="fluss-linien">
+        <path d="M130 160 C200 160 220 30 300 30"/><path d="M130 160 C200 160 220 95 300 95"/><path d="M130 160 L300 160"/><path d="M130 160 C200 160 220 225 300 225"/><path d="M130 160 C200 160 220 290 300 290"/></g>
+      <g font-size="14" fill="#e2e8f0">
+        <rect x="300" y="12" width="150" height="36" rx="10" fill="#0f172a" stroke="#1e293b"/><text x="316" y="35">📅 Kalender</text>
+        <rect x="300" y="77" width="150" height="36" rx="10" fill="#0f172a" stroke="#1e293b"/><text x="316" y="100">▦ Projekte</text>
+        <rect x="300" y="142" width="150" height="36" rx="10" fill="#0f172a" stroke="#1e293b"/><text x="316" y="165">◎ Wunschliste</text>
+        <rect x="300" y="207" width="150" height="36" rx="10" fill="#0f172a" stroke="#1e293b"/><text x="316" y="230">🧠 Second Brain</text>
+        <rect x="300" y="272" width="150" height="36" rx="10" fill="#0f172a" stroke="#1e293b"/><text x="316" y="295">✦ Destille</text></g>
+      <circle r="5" fill="#fff" class="teilchen"><animateMotion dur="3s" repeatCount="indefinite" path="M130 160 C200 160 220 30 300 30"/></circle>
+      <circle r="5" fill="#fff" class="teilchen"><animateMotion dur="3.7s" repeatCount="indefinite" path="M130 160 L300 160"/></circle>
+      <circle r="5" fill="#fff" class="teilchen"><animateMotion dur="4.4s" repeatCount="indefinite" path="M130 160 C200 160 220 290 300 290"/></circle>
+    </svg>
+  </div>
+  <div class="beispiele">
+    <div class="beispiel zeige"><code>„Morgen 15 Uhr Zahnarzt“</code><span>→ To-Do im Kalender</span></div>
+    <div class="beispiel zeige"><code>„Für Zeitblick noch das Impressum prüfen“</code><span>→ Aufgabe im Projekt</span></div>
+    <div class="beispiel zeige"><code>„Irgendwann kaufen: Wool Coat, 60 €“</code><span>→ Wunschliste</span></div>
+    <div class="beispiel zeige"><code>„Nach Sport schlafe ich besser“</code><span>→ Notiz im Second Brain</span></div>
+  </div>
+</section>
+
+<!-- ───────── Ein Tag ───────── -->
+<section id="tag" class="block">
+  <p class="vorzeile zeige">Ein Tag mit Smalox Hub</p>
+  <h2 class="zeige">So fühlt sich Ordnung an.</h2>
+  <ol class="zeitstrahl">
+    <li class="zeige"><time>07:30</time><div><h3>Morgen-Überblick</h3><p>PC an, der Hub startet automatisch. Oben deine To-Dos, daneben „Heute wichtig“: eine Deadline in 7 Tagen, zwei Termine.</p></div></li>
+    <li class="zeige"><time>12:10</time><div><h3>Idee in der Mittagspause</h3><p>Taste <kbd>E</kbd>, „Idee: Wochenbericht per Mail“ tippen, Enter. Landet als Aufgabe im richtigen Projekt.</p></div></li>
+    <li class="zeige"><time>16:45</time><div><h3>Ein gutes Reel gesehen</h3><p>Link in Destille werfen. Eine Minute später: drei konkrete To-Dos und zwei Buchtipps.</p></div></li>
+    <li class="zeige"><time>21:00</time><div><h3>Ehrlicher Rückblick</h3><p>Zeitblick zeigt: 4 Std Fokus, 1 Std Ablenkung. Deadswitch-Schritt 2 abgehakt, die Sperre bleibt aus.</p></div></li>
+  </ol>
+</section>
+
+<!-- ───────── Vergleich ───────── -->
+<section class="block">
+  <p class="vorzeile zeige">Warum Smalox Hub</p>
+  <h2 class="zeige">Statt fünf Apps und drei Abos.</h2>
+  <div class="tabelle-rahmen zeige">
+    <table class="vergleich">
+      <thead><tr><th></th><th class="wir">Smalox Hub</th><th>Typische To-Do-App</th><th>Typischer Zeit-Tracker</th></tr></thead>
+      <tbody>
+        <tr><td>Kosten</td><td class="wir">0 €</td><td>oft Abo</td><td>oft Abo</td></tr>
+        <tr><td>Daten bleiben auf deinem PC</td><td class="wir">✓</td><td>meist Cloud</td><td>meist Cloud</td></tr>
+        <tr><td>Deadlines mit Konsequenz</td><td class="wir">✓</td><td>–</td><td>–</td></tr>
+        <tr><td>Bildschirmzeit automatisch</td><td class="wir">✓</td><td>–</td><td>✓</td></tr>
+        <tr><td>Videos zu To-Dos</td><td class="wir">✓</td><td>–</td><td>–</td></tr>
+        <tr><td>Obsidian / Second Brain</td><td class="wir">✓</td><td>selten</td><td>–</td></tr>
+        <tr><td>KI sortiert für dich ein</td><td class="wir">✓</td><td>teils</td><td>–</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ───────── Installieren ───────── -->
+<section id="installieren" class="block">
+  <p class="vorzeile zeige">Installieren</p>
+  <h2 class="zeige">In zwei Minuten startklar.</h2>
+  <ol class="schritte">
+    <li class="zeige"><b>Herunterladen</b> und <code>SmaloxHub.exe</code> doppelklicken.</li>
+    <li class="zeige"><b>Windows-Warnung?</b> Die App ist neu und nicht signiert: „Weitere Informationen“ → „Trotzdem ausführen“.</li>
+    <li class="zeige"><b>Name eingeben</b> und wählen, ob du ein Obsidian-Vault nutzt oder ein neues Second Brain bekommst.</li>
+    <li class="zeige"><b>Fertig.</b> Desktop-Symbol ist da, der Hub startet ab jetzt mit Windows.</li>
+  </ol>
+  <div class="zwei-kaesten">
+    <div class="kasten zeige"><p class="kasten-titel">🧩 Optional: Chrome-Erweiterungen</p>
+      <p><code>chrome://extensions</code> → „Entwicklermodus“ → „Entpackte Erweiterung laden“, dann den Ordner wählen:</p>
+      <ul class="liste klein"><li><code>%LOCALAPPDATA%\SmaloxHub\apps\web-demos\zeitschloss</code></li><li><code>%LOCALAPPDATA%\SmaloxHub\apps\web-demos\destille\extension</code></li></ul></div>
+    <div class="kasten zeige"><p class="kasten-titel">✦ Optional: KI mit Claude</p>
+      <p>Chat, Dropbox und Destille nutzen <a href="https://claude.com/claude-code" rel="noopener">Claude Code</a>. Einmal installieren und mit deinem Claude-Konto anmelden, der Hub findet es von selbst. Ohne Claude läuft alles andere trotzdem.</p></div>
+    <div class="kasten zeige"><p class="kasten-titel">🔒 Deine Daten bleiben bei dir</p>
+      <ul class="haken"><li>Kein Konto, keine Cloud, kein Tracking</li><li>Second Brain = normaler Ordner mit Markdown</li><li>Deinstallieren über Windows → Apps</li></ul></div>
+  </div>
+</section>
+
+<!-- ───────── FAQ ───────── -->
+<section id="faq" class="block schmal">
+  <p class="vorzeile zeige">FAQ</p>
+  <h2 class="zeige">Häufige Fragen</h2>
+  <details class="zeige"><summary>Was kostet Smalox Hub?</summary><p>Nichts. Für die KI-Funktionen brauchst du ein eigenes Claude-Konto, alles andere läuft ohne.</p></details>
+  <details class="zeige"><summary>Läuft das auf dem Mac?</summary><p>Nein, aktuell nur unter Windows 10 und 11.</p></details>
+  <details class="zeige"><summary>Warum warnt Windows beim Start?</summary><p>Die Datei ist nicht mit einem teuren Code-Zertifikat signiert, deshalb kennt Windows sie noch nicht. „Weitere Informationen“ → „Trotzdem ausführen“.</p></details>
+  <details class="zeige"><summary>Kann ich mein bestehendes Obsidian-Vault nutzen?</summary><p>Ja, beim ersten Start wählst du den Ordner. Projekte in <code>02 Projekte/Wichtig</code>, <code>Mittel wichtig</code>, <code>Unwichtig</code>, Aufgaben als <code>- [ ]</code>, Daily Notes in <code>05 Daily Notes</code>. Ohne Vault bekommst du eine passende Vorlage.</p></details>
+  <details class="zeige"><summary>Kann Deadswitch mich wirklich sperren?</summary><p>Ja, das ist der Sinn. Verpasst du eine Deadline, beendet Deadswitch Spiele und sperrt (mit Zeitschloss) Ablenkungs-Seiten, bis du die Aufgabe mit Nachweis erledigst. Lege Deadlines bewusst an.</p></details>
+  <details class="zeige"><summary>Werden TikToks und Reels wirklich angeschaut?</summary><p>Die .exe liest Titel, Beschreibung und Seite. Die volle Video-Auswertung (Ton abschreiben, Standbilder) braucht große Zusatzpakete und ist deshalb nicht enthalten.</p></details>
+  <details class="zeige"><summary>Wie werde ich es wieder los?</summary><p>Windows-Einstellungen → Apps → „Smalox Hub“ → Deinstallieren. Du wählst, ob deine Daten bleiben. Dein Second-Brain-Ordner wird nie gelöscht.</p></details>
+</section>
+
+<section class="schluss zeige">
+  <h2>Bereit für mehr Ordnung?</h2>
+  <p>Kostenlos, lokal, in zwei Minuten installiert.</p>
+  <a class="knopf gross hell" href="https://github.com/smaloxzs/smalox-hub/releases/latest/download/SmaloxHub.exe">Smalox Hub herunterladen</a>
+</section>
 </main>
 
 <footer class="fuss">
-  <span>Smalox Hub · von <a href="https://smaloxzs.github.io/smalox-webdesign/">Smalox</a></span>
+  <span><img src="icon.png" alt="" width="18" height="18"> Smalox Hub · von <a href="https://smaloxzs.github.io/smalox-webdesign/">Smalox</a> · <a href="https://github.com/smaloxzs/smalox-hub">GitHub</a></span>
   <span><a href="https://smaloxzs.github.io/smalox-webdesign/impressum.html">Impressum</a> · <a href="https://smaloxzs.github.io/smalox-webdesign/datenschutz.html">Datenschutz</a></span>
 </footer>
-
+<script src="app.js"></script>
 </body>
 </html>
