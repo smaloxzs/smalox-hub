@@ -18,14 +18,14 @@
 
 <header class="kopf">
   <a class="marke" href="#"><img src="icon.png" alt="" width="30" height="30"><span>Smalox Hub</span></a>
-  <nav><a href="#demo">Ausprobieren</a><a href="#funktionen">Funktionen</a><a href="#tag">Ein Tag</a><a href="#installieren">Installieren</a><a href="#faq">FAQ</a></nav>
+  <nav><a href="#demo">Ausprobieren</a><a href="#neu">Neu</a><a href="#funktionen">Funktionen</a><a href="#tag">Ein Tag</a><a href="#installieren">Installieren</a><a href="#faq">FAQ</a></nav>
   <a class="knopf klein" href="#download">Kostenlos laden</a>
 </header>
 
 <main>
 <!-- ───────── Hero ───────── -->
 <section class="held">
-  <p class="etikett zeige"><span class="punkt-live"></span> Neu: Version 1.0 · kostenlos für Windows</p>
+  <p class="etikett zeige"><span class="punkt-live"></span> Neu in 1.1: Routinen, Briefings &amp; Rückblicke</p>
   <h1 class="zeige">Dein ganzes Leben.<br><span class="verlauf">Eine App.</span></h1>
   <p class="unter zeige">To-Dos, Deadlines mit echter Konsequenz, Bildschirmzeit, dein Second Brain und ein KI-Assistent, der für dich einsortiert. Alles lokal auf deinem PC, ohne Konto, ohne Cloud.</p>
   <div class="knoepfe zeige" id="download">
@@ -34,7 +34,7 @@
       Für Windows herunterladen</a>
     <a class="knopf geist gross" href="#demo">Live ausprobieren →</a>
   </div>
-  <p class="klein-info zeige">SmaloxHub.exe · ca. 16 MB · Windows 10 &amp; 11</p>
+  <p class="klein-info zeige">SmaloxHub.exe · Version 1.1 · ca. 16 MB · Windows 10 &amp; 11</p>
 
   <div class="zahlen zeige">
     <div><b data-zaehlen="5">5</b><span>Apps in einer</span></div>
@@ -66,6 +66,7 @@
     <aside class="demo-nav" role="tablist" aria-label="Demo-Bereiche">
       <div class="demo-marke"><img src="icon.png" alt="" width="22" height="22"> Smalox Hub</div>
       <button role="tab" aria-selected="true" data-tab="todos"><i>✓</i>To-Dos</button>
+      <button role="tab" data-tab="routinen"><i>◎</i>Routinen</button>
       <button role="tab" data-tab="dropbox"><i>⇣</i>Dropbox</button>
       <button role="tab" data-tab="deadswitch"><i>⚑</i>Deadswitch</button>
       <button role="tab" data-tab="zeit"><i>◷</i>Bildschirmzeit</button>
@@ -83,6 +84,20 @@
           <li><label><input type="checkbox"><span>30 Minuten lesen</span></label></li>
         </ul>
         <div class="fortschritt"><div class="balken"><i id="todo-balken"></i></div><span id="todo-prozent">0 % erledigt</span></div>
+      </div>
+      <!-- Routinen -->
+      <div class="demo-seite" data-seite="routinen" role="tabpanel">
+        <div class="demo-kopf"><h3>Routinen heute</h3><span class="chip gruen" id="routinen-chip">2 / 4 geschafft</span></div>
+        <ul class="demo-liste" id="routinen-liste">
+          <li><label><input type="checkbox" checked><span>Vor 8 Uhr aufstehen</span></label><em class="gelb">🔥 6 Tage</em></li>
+          <li><label><input type="checkbox"><span>10 Seiten lesen</span></label><em>21:00</em></li>
+          <li><label><input type="checkbox"><span>Gym</span></label><em>17:00 · Mo/Mi/Fr</em></li>
+          <li class="auto"><label><input type="checkbox" disabled><span>Social Media höchstens 60 Min</span></label><em class="blau">misst Zeitblick: 34 Min</em></li>
+        </ul>
+        <p class="abschnitt">Ziele, letzte 7 Tage</p>
+        <div class="ziel-balken"><span>Früh aufstehen</span><div class="balken"><i style="width:86%"></i></div><b>86 %</b></div>
+        <div class="ziel-balken"><span>Mehr lesen</span><div class="balken"><i style="width:57%"></i></div><b>57 %</b></div>
+        <div class="ziel-balken"><span>Fit werden</span><div class="balken"><i style="width:67%"></i></div><b>67 %</b></div>
       </div>
       <!-- Dropbox -->
       <div class="demo-seite" data-seite="dropbox" role="tabpanel">
@@ -124,12 +139,29 @@
       <!-- Destille -->
       <div class="demo-seite" data-seite="destille" role="tabpanel">
         <div class="demo-kopf"><h3>Aus einem Reel</h3><span class="chip lila">Destille</span></div>
-        <div class="reel"><div class="reel-bild">▶</div><div><b>„5 Bücher je nach Lebenslage“</b><small>Instagram · abgeschrieben + 6 Standbilder</small></div></div>
+        <div class="reel"><div class="reel-bild">▶</div><div><b>„5 Bücher je nach Lebenslage“</b><small>Instagram · aus Beschreibung und Seite ausgelesen</small></div></div>
         <p class="abschnitt">Empfehlungen</p>
         <div class="tags"><span>📚 Extreme Ownership</span><span>📚 The Power of Now</span><span>📚 Selbstbetrachtungen</span><span>📚 Can't Hurt Me</span></div>
         <p class="abschnitt">To-Dos</p>
         <ul class="demo-liste"><li><label><input type="checkbox"><span>„Extreme Ownership“ als Nächstes lesen</span></label><em>klein</em></li></ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── Neu in 1.1 ───────── -->
+<section id="neu" class="block">
+  <p class="vorzeile zeige">Neu in Version 1.1</p>
+  <h2 class="zeige">Vom Plan zur Gewohnheit.</h2>
+  <p class="block-unter zeige">Ziele, tägliche Routinen, Briefings zu festen Uhrzeiten und ehrliche Rückblicke: Der Hub sagt dir nicht nur, was ansteht, sondern auch, wie es läuft.</p>
+  <div class="neu-raster">
+    <figure class="neu-bild zeige"><img src="routinen.png" alt="Smalox Hub: Seite Ziele und Routinen mit Tages-Checkliste, Zielen und 14-Tage-Raster" width="1480" height="1000" loading="lazy"></figure>
+    <div class="neu-liste">
+      <div class="neu-punkt zeige"><span class="ik-rund gruen">◎</span><div><h3>Ziele &amp; Routinen</h3><p>Ziele wie „Fit werden“ mit Routinen wie „Gym Mo/Mi/Fr“. Abhaken, Mengen eintragen („10 Seiten“) oder automatisch messen lassen („Social Media höchstens 60 Min“). Mit Serien und Quoten.</p></div></div>
+      <div class="neu-punkt zeige"><span class="ik-rund gelb">☀</span><div><h3>Briefings um 10, 16 und 20 Uhr</h3><p>Als Windows-Benachrichtigung: was heute noch ansteht, abends schon für morgen. Termine, Fristen, offene Routinen. Uhrzeiten frei wählbar.</p></div></div>
+      <div class="neu-punkt zeige"><span class="ik-rund lila">↺</span><div><h3>Rückblicke für Tag, Woche, Monat, Jahr</h3><p>Jeden Abend, sonntags und am Monats- und Jahresende: was gut lief, was nicht, und ein konkreter Fokus für danach. War der PC aus, kommt der Rückblick nach.</p></div></div>
+      <div class="neu-punkt zeige"><span class="ik-rund blau">⇄</span><div><h3>Google Kalender, Google Tasks, Notion</h3><p>Termine und Aufgaben aus deinen anderen Apps erscheinen im Kalender und im Briefing. Deine Zugangsdaten bleiben auf deinem PC.</p></div></div>
+      <div class="neu-punkt zeige"><span class="ik-rund rot">★</span><div><h3>Wunschliste &amp; mehr</h3><p>Sachen, die du irgendwann kaufen willst, mit Preis und Shop. Dazu To-Dos bearbeiten per Doppelklick und eine Dropbox, die Notizen direkt ins richtige Projekt legt.</p></div></div>
     </div>
   </div>
 </section>
@@ -271,6 +303,9 @@
   <details class="zeige"><summary>Kann ich mein bestehendes Obsidian-Vault nutzen?</summary><p>Ja, beim ersten Start wählst du den Ordner. Projekte in <code>02 Projekte/Wichtig</code>, <code>Mittel wichtig</code>, <code>Unwichtig</code>, Aufgaben als <code>- [ ]</code>, Daily Notes in <code>05 Daily Notes</code>. Ohne Vault bekommst du eine passende Vorlage.</p></details>
   <details class="zeige"><summary>Kann Deadswitch mich wirklich sperren?</summary><p>Ja, das ist der Sinn. Verpasst du eine Deadline, beendet Deadswitch Spiele und sperrt (mit Zeitschloss) Ablenkungs-Seiten, bis du die Aufgabe mit Nachweis erledigst. Lege Deadlines bewusst an.</p></details>
   <details class="zeige"><summary>Werden TikToks und Reels wirklich angeschaut?</summary><p>Die .exe liest Titel, Beschreibung und Seite. Die volle Video-Auswertung (Ton abschreiben, Standbilder) braucht große Zusatzpakete und ist deshalb nicht enthalten.</p></details>
+  <details class="zeige"><summary>Wie verbinde ich Google Kalender, Google Tasks oder Notion?</summary><p>Im Hub unter „Verbindungen“ steht für jede App eine Schritt-für-Schritt-Anleitung. Google Kalender über die geheime iCal-Adresse (1 Minute), Notion über ein Integrations-Token (3 Minuten), Google Tasks über einen eigenen kostenlosen Google-Zugang (ca. 10 Minuten). Alle drei werden nur gelesen.</p></details>
+  <details class="zeige"><summary>Kosten Briefings und Rückblicke etwas?</summary><p>Briefings nicht, sie werden direkt aus deinen Daten gebaut. Rückblicke schreibt Claude über dein eigenes Claude-Konto (der tägliche mit dem günstigen Modell). Ohne Claude bekommst du einen Rückblick aus den reinen Zahlen.</p></details>
+  <details class="zeige"><summary>Ich habe schon Version 1.0, wie update ich?</summary><p>Einfach die neue SmaloxHub.exe herunterladen und doppelklicken. Sie ersetzt die alte Version, deine To-Dos, Deadlines und Einstellungen bleiben erhalten.</p></details>
   <details class="zeige"><summary>Wie werde ich es wieder los?</summary><p>Windows-Einstellungen → Apps → „Smalox Hub“ → Deinstallieren. Du wählst, ob deine Daten bleiben. Dein Second-Brain-Ordner wird nie gelöscht.</p></details>
 </section>
 
