@@ -324,3 +324,19 @@ details p { color: var(--muted); margin: 0 0 18px; }
   .zeige { opacity: 1; transform: none; }
   .linie { stroke-dashoffset: 0; }
 }
+
+/* Neu in 1.2 und Preis */
+.neu-zwei { display: grid; grid-template-columns: 1.25fr 1fr; gap: 22px; margin-top: 34px; }
+.neu-bild-flach { margin: 0; }
+.neu-bild-flach img { width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--line-hell); box-shadow: 0 24px 70px rgba(59, 130, 246, .14); }
+.neu-bild-flach figcaption { margin-top: 10px; color: var(--leise, #94a3b8); font-size: 14px; text-align: center; }
+.preis-karte { max-width: 560px; margin: 0 auto; padding: 34px; border-radius: 26px; background: var(--panel); border: 1px solid var(--line-hell);
+  box-shadow: 0 30px 90px rgba(99, 102, 241, .18); display: grid; gap: 22px; text-align: left; }
+.preis-kopf p { margin: 6px 0 0; color: #c7d2fe; }
+.preis-etikett { display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #93c5fd; }
+.preis-zahl { display: flex; align-items: baseline; gap: 10px; margin-top: 8px; }
+.preis-zahl b { font-size: 64px; line-height: 1; }
+.preis-zahl span { font-size: 18px; color: #94a3b8; }
+.preis-karte .knopf { justify-content: center; }
+.preis-fein { margin: 0; font-size: 13.5px; line-height: 1.55; color: #94a3b8; }
+@media (max-width: 860px) { .neu-zwei { grid-template-columns: 1fr; } .preis-karte { padding: 24px; } .preis-zahl b { font-size: 52px; } }
