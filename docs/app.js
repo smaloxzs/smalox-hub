@@ -1,3 +1,7 @@
+// Stripe-Zahlungslink (7 Tage gratis, dann 19 €/Jahr). Leer = Knöpfe springen zum Preis-Abschnitt.
+const KAUF_LINK = "https://buy.stripe.com/3cIfZid16d478BZ6GU2oE01";
+if (KAUF_LINK) document.querySelectorAll("[data-kauf]").forEach((a) => { a.href = KAUF_LINK; });
+
 /* Smalox Hub Website: Einblenden, Zähler, Kachel-Licht und die interaktive Demo. Keine Abhängigkeiten. */
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
